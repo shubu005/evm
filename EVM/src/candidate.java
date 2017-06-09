@@ -24,11 +24,6 @@ public class candidate {
     public void CountVote()
     {
         totalVotes++;
-    }
-    
-
-    
-
-	
+    }	
 	
 }
