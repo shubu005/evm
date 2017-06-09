@@ -1,23 +1,34 @@
-
 public class candidate {
-int id;
-int wardNo;
-String CName;
 
+	String Cname;
+	int totalVotes;
+	
+	public candidate(String name) 
+	{
+		totalVotes=0;
+		this.Cname=name;
+		
+	}
+	
+	public int getNumberOfVotes()
+    {
+        return totalVotes;
+    }
+	
+	public String getName()
+	{
+		return Cname;
+	}
+	
 
-public candidate(int id, int wno, String name){
-	this.id=id;
-	this.wardNo=wno;
-	this.CName=name;
-}
+    public void CountVote()
+    {
+        totalVotes++;
+    }
+    
 
+    
 
-String getName(){
-	return CName;
-}
-
-int getid(){
-	return id;
-}
-
+	
+	
 }
